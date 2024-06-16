@@ -8,6 +8,7 @@ class PsychologyApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.printf("테스트");
 	}
 
 }

@@ -1,0 +1,11 @@
+version: '1'
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: "psy"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "1234"
+      MYSQL_ROOT_PASSWORD: "1234"
+    ports:
+      - "3306:3306"
