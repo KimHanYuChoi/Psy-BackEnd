@@ -1,17 +1,16 @@
 package com.sentinels.psychology.Member.dto;
 
-import com.sentinels.psychology.Member.domain.Role;
 import lombok.Builder;
+import lombok.Getter;
 
-public class MemberDto {
+@Getter
+public class reqMemberDto {
     String name;
     String password;
-    Role role;
 
     @Builder
-    private MemberDto(String name, String password, Role role) {
+    private reqMemberDto(String name, String password) {
         this.name = name;
         this.password = password;
-        this.role = role;
     }
 }
