@@ -1,4 +1,4 @@
-package com.sentinels.psychology.Member.domain;
+package com.sentinels.psychology.member.domain;
 
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package com.sentinels.psychology.Member.exception;
+package com.sentinels.psychology.member.exception;
 
 public class MemberAlreadyExistsException extends RuntimeException {
     public MemberAlreadyExistsException(String message) {

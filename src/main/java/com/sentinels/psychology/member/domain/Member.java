@@ -1,4 +1,4 @@
-package com.sentinels.psychology.Member.domain;
+package com.sentinels.psychology.member.domain;
 
 import jakarta.persistence.*;
 import lombok.Builder;
@@ -15,8 +15,8 @@ public class Member {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "username")
+    private String username;
 
     @Column(name = "password")
     private String password;
@@ -26,9 +26,9 @@ public class Member {
     private Role role;
 
     @Builder
-    public Member(String name, String password, Role role) {
-        this.name = name;
+    public Member(String username, String password, Role role) {
+        this.username = username;
         this.password = password;
-        this.role = role;
+        this.role = role != null ? role : Role.ROLE_USER;
     }
 }
